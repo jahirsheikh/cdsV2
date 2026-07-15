@@ -1,0 +1,158 @@
+/* Responsive Design */
+
+/* Large Desktop */
+@media (max-width: 1399.98px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1199.98px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding: 100px 0 80px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .navbar-custom .nav-link {
+        margin: 5px 0;
+    }
+    
+    .top-bar {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-padding {
+        padding: 40px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .brand-text strong {
+        font-size: 1.4rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.55rem;
+    }
+
+    .brand-container {
+        padding: 6px 10px;
+    }
+
+    .brand-badge {
+        font-size: 0.45rem;
+        padding: 2px 6px;
+    }
+
+    .brand-accent-line {
+        height: 2px;
+    }
+}
+
+/* Certifications Page */
+@media (max-width: 991.98px) {
+    .cert-stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item:nth-child(2)::after {
+        display: none;
+    }
+
+    .stat-item:nth-child(odd):not(:last-child)::after {
+        display: block;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .cert-hero {
+        min-height: 360px;
+        padding: 100px 0 60px;
+    }
+
+    .cert-stats {
+        margin-top: -24px;
+    }
+
+    .stat-item .num {
+        font-size: 1.8rem;
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .cert-box .img-wrap {
+        height: 130px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cert-stats-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-item {
+        padding: 24px 14px;
+    }
+
+    .stat-item::after {
+        display: none !important;
+    }
+
+    .cert-filter-btn {
+        padding: 8px 16px;
+        font-size: 0.82rem;
+    }
+
+    .cert-box .img-wrap {
+        height: 110px;
+    }
+
+    .lightbox-close {
+        top: -40px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+/* Extra Small */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        height: 35px !important;
+    }
+
+    .brand-text strong {
+        font-size: 1.1rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.5rem;
+    }
+
+    .brand-badge {
+        display: none;
+    }
+}

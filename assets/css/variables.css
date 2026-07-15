@@ -1,0 +1,19 @@
+:root {
+  /* Colors */
+  /* --primary-color: #16A34A; */
+  --primary-color: #a31f10; 
+  --secondary-color: #F97316; /* Orange */
+  --bg-color: #FFFFFF; /* Background */
+  --bg-light: #F8FAFC; /* Light Background */
+  --text-dark: #1F2937; /* Dark Text */
+  --text-gray: #6B7280; /* Gray Text */
+  
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Layout */
+  --max-width: 1320px;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
