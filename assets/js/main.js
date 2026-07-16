@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
     "use strict";
 
     // Sticky Navbar
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
             $('.navbar-custom').addClass('sticky-top shadow-sm');
         } else {
@@ -11,7 +11,7 @@
     });
 
     // Initialize AOS Animation
-    if(typeof AOS !== 'undefined') {
+    if (typeof AOS !== 'undefined') {
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
@@ -24,7 +24,7 @@
 
     // initScrollTopBtn();
 
-    
+
     function initScrollTopBtn() {
         if (document.getElementById('scrollTopBtn')) return;
 
@@ -138,7 +138,7 @@
 </nav>
 `;
 
-const footerHTML = `
+    const footerHTML = `
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
@@ -241,7 +241,7 @@ const footerHTML = `
         $(".navbar-nav .nav-link").removeClass("active").removeAttr('aria-current');
         $(".navbar-nav .nav-link").each(function () {
             if ($(this).attr("href") === currentPage) {
-                $(this).addClass("active").attr('aria-current','page');
+                $(this).addClass("active").attr('aria-current', 'page');
             }
         });
     }
