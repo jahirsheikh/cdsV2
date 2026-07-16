@@ -1038,6 +1038,14 @@ a:hover {
 .hero-egp {
   background-image: url("/assets/img/hero-egp.jpg");
 }
+.hero-oem{
+  background-image: url("/assets/img/oem-distribution.png");
+
+}
+.hero-smil{
+  background-image: url("/assets/img/Smiling-Experience.jpg");
+
+}
 
 /* Accessibility: skip link and focus styles */
 .skip-link {

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiling Experience - CDS System & Solution</title>
+    <meta name="description"
+        content="Smiling Experience — deep dives into CDS projects, partnerships, and technical capabilities across solar, MDM, fintech, banking, public sector, and industry in Bangladesh.">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <div id="main-content" class="bg-primary text-white text-center py-5 bg-hero-cover hero-smil">
+        <div class="container py-5">
+            <span class="badge bg-light text-primary mb-3 px-3 py-2">Smiling Experience</span>
+            <h1 class="display-4 fw-bold text-white">Knowledge Hub: Expertise in Action</h1>
+            <p class="lead text-white-50">Deep dives into our projects, partnerships, and technical capabilities —
+                demonstrating real-world impact across Bangladesh's critical sectors</p>
+        </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="bg-light-custom border-bottom">
+        <div class="container">
+            <nav class="nav justify-content-center flex-wrap py-3 gap-2" id="filter-tabs">
+                <button type="button" class="btn btn-primary-custom btn-sm rounded-pill px-3 filter-btn active"
+                    data-filter="all">All</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3 filter-btn"
+                    data-filter="solar">Solar</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3 filter-btn"
+                    data-filter="mdm">MDM</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3 filter-btn"
+                    data-filter="fintech">FinTech</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3 filter-btn"
+                    data-filter="banking">Banking</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3 filter-btn"
+                    data-filter="public-sector">Public Sector</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3 filter-btn"
+                    data-filter="industry">Industry</button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Featured Case Study -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="modern-card border-0 shadow-sm p-4 p-lg-5 mb-5" data-aos="fade-up" data-category="solar"
+                id="featured-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <span class="badge bg-primary-custom mb-2">🏆 Featured</span>
+                        <span class="text-muted small ms-2">Case Study · March 2024</span>
+                        <h2 class="fw-bold mt-3 mb-3">🏆 Bangladesh's Solar Revolution: From 800MW to 8,000MW by 2041
+                        </h2>
+                        <p class="text-muted">Bangladesh has installed just 800MW of solar. The Vision 2041 target
+                            demands 8,000MW. The gap is opportunity — for factories, banks, and anyone with a rooftop.
+                        </p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Solar</span>
+                            <span class="badge bg-light-custom text-dark border">Policy</span>
+                            <span class="badge bg-light-custom text-dark border">2041</span>
+                        </div>
+                        <a href="#" class="btn btn-primary-custom">Read Full Case Study</a>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="row g-3 text-center">
+                            <div class="col-6">
+                                <div class="border rounded-3 p-3 h-100">
+                                    <h4 class="fw-bold text-primary mb-0">64</h4>
+                                    <p class="text-muted small mb-0">Districts Reach</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="border rounded-3 p-3 h-100">
+                                    <h4 class="fw-bold text-primary mb-0">MDM</h4>
+                                    <p class="text-muted small mb-0">Zero-Touch Enroll</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="border rounded-3 p-3 h-100">
+                                    <h4 class="fw-bold text-primary mb-0">24/7</h4>
+                                    <p class="text-muted small mb-0">NOC Monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study Grid -->
+            <p id="no-results-msg" class="text-center text-muted py-5" style="display:none;">No case studies found in
+                this category yet.</p>
+            <div class="row g-4" id="case-study-grid">
+                <!-- Card -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-category="solar industry">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Business Intelligence</span>
+                        <p class="text-muted small mb-2">May 2025</p>
+                        <h5 class="fw-bold mb-2">The Demand Charge You're Paying But Not Watching — And How Solar+BESS
+                            Kills It</h5>
+                        <p class="text-muted small">The demand charge on your BPDB bill — calculated from your worst
+                            15-minute peak each month — is costing most Bangladesh factories BDT 2–3 lakh/month before
+                            they use a single unit.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">BESS</span>
+                            <span class="badge bg-light-custom text-dark border">Solar</span>
+                            <span class="badge bg-light-custom text-dark border">Factory</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-category="industry">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Buyer Alert</span>
+                        <p class="text-muted small mb-2">April 2025</p>
+                        <h5 class="fw-bold mb-2">Bangladesh's Grey Market IT Problem: Why the Cheap Dell Server Costs
+                            More</h5>
+                        <p class="text-muted small">A bank bought 40 servers at 28% below market. 18 months later, 11
+                            had failed. The 'saving' cost 4x the difference.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">IT Hardware</span>
+                            <span class="badge bg-light-custom text-dark border">Procurement</span>
+                            <span class="badge bg-light-custom text-dark border">Grey Market</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-category="public-sector">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Procurement Guide</span>
+                        <p class="text-muted small mb-2">April 2025</p>
+                        <h5 class="fw-bold mb-2">e-GP Decoded: The Insider Guide to Winning Government IT Contracts in
+                            Bangladesh</h5>
+                        <p class="text-muted small">The same handful of vendors win government IT tenders repeatedly.
+                            Most lose on avoidable documentation errors.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">e-GP</span>
+                            <span class="badge bg-light-custom text-dark border">Government</span>
+                            <span class="badge bg-light-custom text-dark border">Tender</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-category="banking">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Cost Analysis</span>
+                        <p class="text-muted small mb-2">March 2025</p>
+                        <h5 class="fw-bold mb-2">NOC vs DIY: The True Cost of In-House IT Support for Bangladesh Banks
+                        </h5>
+                        <p class="text-muted small">Every bank faces the same question: build internal IT capacity or
+                            outsource? The answer depends on one number most CFOs don't calculate.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Banking</span>
+                            <span class="badge bg-light-custom text-dark border">ATM</span>
+                            <span class="badge bg-light-custom text-dark border">NOC</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-category="solar">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Innovation</span>
+                        <p class="text-muted small mb-2">May 2025</p>
+                        <h5 class="fw-bold mb-2">Perovskite Solar Is Coming. Bangladesh Has 18 Months to Position
+                            Itself.</h5>
+                        <p class="text-muted small">Silicon solar panels today achieve 22% efficiency. Perovskite tandem
+                            cells hit 33.9% in lab, reaching commercial scale by 2027–2029.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Solar</span>
+                            <span class="badge bg-light-custom text-dark border">Perovskite</span>
+                            <span class="badge bg-light-custom text-dark border">Innovation</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-category="solar industry">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Future of Energy</span>
+                        <p class="text-muted small mb-2">May 2025</p>
+                        <h5 class="fw-bold mb-2">Solar Intelligence: How AI-Managed Microgrids Will Power Bangladesh
+                            Industry 4.0</h5>
+                        <p class="text-muted small">Factories that deploy AI-managed solar microgrids in 2025–2028 will
+                            have a structural energy cost advantage.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Solar</span>
+                            <span class="badge bg-light-custom text-dark border">AI</span>
+                            <span class="badge bg-light-custom text-dark border">Microgrid</span>
+                            <span class="badge bg-light-custom text-dark border">RMG</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-category="fintech">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Market Analysis</span>
+                        <p class="text-muted small mb-2">May 2025</p>
+                        <h5 class="fw-bold mb-2">Bangladesh FinTech in 2025: The NPSB Interoperability Dividend</h5>
+                        <p class="text-muted small">53 banks and MFS providers now connected through NPSB. Institutions
+                            that built API-ready infrastructure in 2022–2024 are capturing disproportionate transaction
+                            volume.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">FinTech</span>
+                            <span class="badge bg-light-custom text-dark border">NPSB</span>
+                            <span class="badge bg-light-custom text-dark border">Bangladesh Bank</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-category="mdm">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Technical</span>
+                        <p class="text-muted small mb-2">April 2025</p>
+                        <h5 class="fw-bold mb-2">MDM in 2025: Why Zero-Trust Device Management Is No Longer Optional
+                        </h5>
+                        <p class="text-muted small">Bangladesh Bank's 2024 ICT Guidelines mandate MDM for all financial
+                            institutions. The compliance case is clear — but the security case goes much further.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">MDM</span>
+                            <span class="badge bg-light-custom text-dark border">Zero Trust</span>
+                            <span class="badge bg-light-custom text-dark border">Bangladesh Bank</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200"
+                    data-category="public-sector industry">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Case Study</span>
+                        <p class="text-muted small mb-2">March 2025</p>
+                        <h5 class="fw-bold mb-2">Digitising Bangladesh's Universities: Lessons from JUST and 12 Medical
+                            Colleges</h5>
+                        <p class="text-muted small">500+ PCs, enterprise networking, servers — delivered across 40+
+                            university buildings. What three years of academic IT deployments taught CDS.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Academic</span>
+                            <span class="badge bg-light-custom text-dark border">University</span>
+                            <span class="badge bg-light-custom text-dark border">Digital Campus</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-category="solar">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Platform Deep-Dive</span>
+                        <p class="text-muted small mb-2">April 2025</p>
+                        <h5 class="fw-bold mb-2">SunEcono EaaS: Zero CAPEX Solar for Bangladesh Industry</h5>
+                        <p class="text-muted small">How the EaaS model removes upfront cost from rooftop solar — Sungrow
+                            inverters, LFP BESS storage, 25-year panel warranty, and BPDB net metering managed
+                            end-to-end.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Solar</span>
+                            <span class="badge bg-light-custom text-dark border">EaaS</span>
+                            <span class="badge bg-light-custom text-dark border">SunEcono</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-category="solar industry">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Technical Guide</span>
+                        <p class="text-muted small mb-2">March 2025</p>
+                        <h5 class="fw-bold mb-2">BESS for Bangladesh Industry: Eliminate Peak Demand Charges</h5>
+                        <p class="text-muted small">LFP battery banks that slash demand charges by 60–80%, store solar
+                            excess, and keep production lines running during grid outages.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">BESS</span>
+                            <span class="badge bg-light-custom text-dark border">Battery</span>
+                            <span class="badge bg-light-custom text-dark border">Solar</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-category="solar">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Innovation</span>
+                        <p class="text-muted small mb-2">February 2025</p>
+                        <h5 class="fw-bold mb-2">Floating Solar: 10–15% Higher Yield, Zero Land Footprint</h5>
+                        <p class="text-muted small">Pontoon-mounted FPV systems on reservoirs and fish farms — superior
+                            yield from water cooling, plus dual agrivoltaic economics.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">FPV</span>
+                            <span class="badge bg-light-custom text-dark border">Floating Solar</span>
+                            <span class="badge bg-light-custom text-dark border">Innovation</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-category="mdm public-sector">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Case Study</span>
+                        <p class="text-muted small mb-2">March 2024</p>
+                        <h5 class="fw-bold mb-2">BBS Economic Census 2023/24: 120,000 Field Tablets — How CDS Built
+                            Bangladesh's Largest Civilian MDM</h5>
+                        <p class="text-muted small">How CDS engineered the MDM backbone for the BBS Economic Census —
+                            zero-touch enrollment, kiosk lockdown, and real-time monitoring for 120,000 field tablets
+                            across all 64 districts.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">MDM</span>
+                            <span class="badge bg-light-custom text-dark border">Government</span>
+                            <span class="badge bg-light-custom text-dark border">BBS</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-category="fintech">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Partnership</span>
+                        <p class="text-muted small mb-2">January 2025</p>
+                        <h5 class="fw-bold mb-2">Nano Saving via bKash Transforms Islamic Banking</h5>
+                        <p class="text-muted small">DPS accounts directly through bKash — BDT 200Cr+ processed in 6
+                            months. Making financial inclusion tangible for millions of unbanked Bangladeshis.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">FinTech</span>
+                            <span class="badge bg-light-custom text-dark border">bKash</span>
+                            <span class="badge bg-light-custom text-dark border">Islamic Banking</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-category="banking">
+                    <div class="modern-card h-100 border-0">
+                        <span class="badge bg-primary-custom mb-2">Expertise</span>
+                        <p class="text-muted small mb-2">December 2024</p>
+                        <h5 class="fw-bold mb-2">Achieving 99.8% ATM Uptime: Banking Automation Excellence</h5>
+                        <p class="text-muted small">How proactive maintenance scheduling and remote NOC monitoring keeps
+                            banking terminals operational — eliminating the reactive call-out model.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Banking</span>
+                            <span class="badge bg-light-custom text-dark border">ATM</span>
+                            <span class="badge bg-light-custom text-dark border">Uptime</span>
+                        </div>
+                        <a href="#" class="fw-semibold text-decoration-none">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Cards -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-category="public-sector">
+                    <div class="modern-card h-100 border-0 position-relative">
+                        <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Coming Soon</span>
+                        <span class="badge bg-primary-custom mb-2">eGP Success</span>
+                        <p class="text-muted small mb-2">February 2025</p>
+                        <h5 class="fw-bold mb-2">JUST IT Infrastructure: Campus-Wide Digital Transformation</h5>
+                        <p class="text-muted small">500+ PCs, enterprise networking, servers, and surveillance across
+                            40+ buildings — delivered 15 days ahead of schedule with zero defect returns.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">eGP</span>
+                            <span class="badge bg-light-custom text-dark border">University</span>
+                            <span class="badge bg-light-custom text-dark border">JUST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-category="industry">
+                    <div class="modern-card h-100 border-0 position-relative">
+                        <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Coming Soon</span>
+                        <span class="badge bg-primary-custom mb-2">Innovation</span>
+                        <p class="text-muted small mb-2">November 2024</p>
+                        <h5 class="fw-bold mb-2">Complete Document Solution: Grameenphone Billing Partner</h5>
+                        <p class="text-muted small">Millions of postpaid bills monthly with 99.99% accuracy — from XML
+                            ingestion and printing to postal delivery across all districts.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Telecom</span>
+                            <span class="badge bg-light-custom text-dark border">GP</span>
+                            <span class="badge bg-light-custom text-dark border">Billing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-category="mdm banking">
+                    <div class="modern-card h-100 border-0 position-relative">
+                        <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Coming Soon</span>
+                        <span class="badge bg-primary-custom mb-2">Technical</span>
+                        <p class="text-muted small mb-2">October 2024</p>
+                        <h5 class="fw-bold mb-2">MDM for Banking: Securing Field Devices in Financial Institutions</h5>
+                        <p class="text-muted small">Containerized workspaces, certificate-based VPN, geo-fencing, and
+                            automated compliance reporting for Bangladesh Bank's ICT guidelines.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">MDM</span>
+                            <span class="badge bg-light-custom text-dark border">Banking</span>
+                            <span class="badge bg-light-custom text-dark border">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-category="fintech">
+                    <div class="modern-card h-100 border-0 position-relative">
+                        <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Coming Soon</span>
+                        <span class="badge bg-primary-custom mb-2">Product</span>
+                        <p class="text-muted small mb-2">September 2024</p>
+                        <h5 class="fw-bold mb-2">NPSB Gateway: Enabling 53-Bank Interoperability</h5>
+                        <p class="text-muted small">Central transaction router for card transactions, mobile payments,
+                            and core banking — 100K+ transactions/hour with sub-200ms latency.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">FinTech</span>
+                            <span class="badge bg-light-custom text-dark border">NPSB</span>
+                            <span class="badge bg-light-custom text-dark border">Cards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-category="public-sector">
+                    <div class="modern-card h-100 border-0 position-relative">
+                        <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Coming Soon</span>
+                        <span class="badge bg-primary-custom mb-2">e-GP Supply</span>
+                        <p class="text-muted small mb-2">August 2024</p>
+                        <h5 class="fw-bold mb-2">Public Sector IT Infrastructure via e-GP</h5>
+                        <p class="text-muted small">Enterprise hardware supply for government institutions — servers,
+                            workstations, structured cabling, and surveillance through verified e-GP procurement.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">e-GP</span>
+                            <span class="badge bg-light-custom text-dark border">Government</span>
+                            <span class="badge bg-light-custom text-dark border">IT Supply</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-category="banking">
+                    <div class="modern-card h-100 border-0 position-relative">
+                        <span class="badge bg-secondary position-absolute top-0 end-0 m-3">Coming Soon</span>
+                        <span class="badge bg-primary-custom mb-2">Product</span>
+                        <p class="text-muted small mb-2">July 2024</p>
+                        <h5 class="fw-bold mb-2">Cash Sorting & Counterfeit Detection: Protecting Bangladesh's Currency
+                        </h5>
+                        <p class="text-muted small">High-speed sorting at 1,200 notes/minute with 14-point detection —
+                            UV, IR, magnetic, thickness. Deployed at central vaults and branches.</p>
+                        <div class="d-flex gap-2 flex-wrap mb-3">
+                            <span class="badge bg-light-custom text-dark border">Banking</span>
+                            <span class="badge bg-light-custom text-dark border">Cash</span>
+                            <span class="badge bg-light-custom text-dark border">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding bg-primary text-white text-center">
+        <div class="container">
+            <p class="text-white-50 mb-2" data-aos="fade-up">Ready to start?</p>
+            <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">Let's Build Bangladesh's Next Digital
+                Infrastructure</h2>
+            <div class="d-flex gap-3 justify-content-center flex-wrap" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="btn btn-light btn-lg fw-bold">Request a Consultation <i
+                        class="fas fa-arrow-right ms-2"></i></a>
+                <a href="solutions.html" class="btn btn-outline-light btn-lg fw-bold">View All Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            var filterBtns = document.querySelectorAll('#filter-tabs .filter-btn');
+            var cards = document.querySelectorAll('#case-study-grid > [data-category]');
+            var featured = document.getElementById('featured-card');
+            var noResultsMsg = document.getElementById('no-results-msg');
+
+            function setActive(btn) {
+                filterBtns.forEach(function (b) {
+                    b.classList.remove('active', 'btn-primary-custom');
+                    b.classList.add('btn-outline-secondary');
+                });
+                btn.classList.add('active', 'btn-primary-custom');
+                btn.classList.remove('btn-outline-secondary');
+            }
+
+            function applyFilter(filter) {
+                var visibleCount = 0;
+
+                cards.forEach(function (card) {
+                    var cats = (card.getAttribute('data-category') || '').split(' ');
+                    var show = filter === 'all' || cats.indexOf(filter) !== -1;
+                    card.style.display = show ? '' : 'none';
+                    if (show) visibleCount++;
+                });
+
+                if (featured) {
+                    var featCats = (featured.getAttribute('data-category') || '').split(' ');
+                    var showFeatured = filter === 'all' || featCats.indexOf(filter) !== -1;
+                    featured.style.display = showFeatured ? '' : 'none';
+                }
+
+                noResultsMsg.style.display = visibleCount === 0 ? '' : 'none';
+            }
+
+            filterBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    setActive(btn);
+                    applyFilter(btn.getAttribute('data-filter'));
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
