@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why CDS - After-Sales & Support</title>
-    <meta name="description" content="Since 2012 CDS has kept 500+ organisations' systems running through AMC contracts, a 24/7 NOC, field engineers in all 64 districts, and hands-on training.">
+    <meta name="description"
+        content="Since 2012 CDS has kept 500+ organisations' systems running through AMC contracts, a 24/7 NOC, field engineers in all 64 districts, and hands-on training.">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -19,7 +23,73 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        /* Client marquee */
+        .client-marquee-section {
+            background: var(--bg-light-custom, #f8fafc);
+            padding: 1.5rem 0;
+            border-top: 1px solid #eef0f4;
+            border-bottom: 1px solid #eef0f4;
+            overflow: hidden;
+        }
+
+        .client-marquee-label {
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #94a3b8;
+            margin-bottom: 0.9rem;
+        }
+
+        .client-marquee-track {
+            display: flex;
+            gap: 1.5rem;
+            width: max-content;
+            animation: marquee 32s linear infinite;
+        }
+
+        .client-marquee-section:hover .client-marquee-track {
+            animation-play-state: paused;
+        }
+
+        .client-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.9rem;
+            background: #ffffff;
+            border-radius: 999px;
+            border: 1px solid #e2e8f0;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #475569;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .client-chip .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--bs-primary, #d42027);
+            flex-shrink: 0;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <div id="header-placeholder"></div>
@@ -32,7 +102,9 @@
                     <span class="badge bg-light text-primary mb-3">After-Sales & Support</span>
                     <h1 class="display-5 fw-bold">After Delivery, The Real Work Starts</h1>
                     <p class="lead text-white-75">
-                        Most IT vendors stop at delivery. CDS doesn't. Since 2012 we've kept 500+ organisations' systems running through AMC contracts, a 24/7 NOC, field engineers in all 64 districts, and training that actually transfers skills.
+                        Most IT vendors stop at delivery. CDS doesn't. Since 2012 we've kept 500+ organisations' systems
+                        running through AMC contracts, a 24/7 NOC, field engineers in all 64 districts, and training
+                        that actually transfers skills.
                     </p>
                     <div class="d-flex gap-3 flex-wrap mt-3">
                         <a href="contact.html" class="btn btn-light btn-lg fw-bold">Get AMC Quotation</a>
@@ -43,12 +115,51 @@
         </div>
     </div>
 
+    <!-- Valuable Clients Marquee -->
+    <section class="client-marquee-section" aria-label="Our valuable clients">
+        <div class="container">
+            <p class="client-marquee-label">Trusted by 25+ Leading Organisations Across Bangladesh</p>
+        </div>
+        <div class="client-marquee-track">
+            <div class="client-chip"><span class="dot"></span>GP</div>
+            <div class="client-chip"><span class="dot"></span>Robi</div>
+            <div class="client-chip"><span class="dot"></span>Airtel</div>
+            <div class="client-chip"><span class="dot"></span>Banglalink</div>
+            <div class="client-chip"><span class="dot"></span>MTB</div>
+            <div class="client-chip"><span class="dot"></span>City Bank</div>
+            <div class="client-chip"><span class="dot"></span>NRBC</div>
+            <div class="client-chip"><span class="dot"></span>BBS</div>
+            <div class="client-chip"><span class="dot"></span>BMTF</div>
+            <div class="client-chip"><span class="dot"></span>JUST</div>
+            <div class="client-chip"><span class="dot"></span>BGB</div>
+            <div class="client-chip"><span class="dot"></span>BTRC</div>
+            <div class="client-chip"><span class="dot"></span>Sharsha</div>
+            <div class="client-chip"><span class="dot"></span>Jessore MC</div>
+            <!-- duplicate set for seamless infinite loop -->
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>GP</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>Robi</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>Airtel</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>Banglalink</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>MTB</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>City Bank</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>NRBC</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>BBS</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>BMTF</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>JUST</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>BGB</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>BTRC</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>Sharsha</div>
+            <div class="client-chip" aria-hidden="true"><span class="dot"></span>Jessore MC</div>
+        </div>
+    </section>
+
     <!-- Six Reasons -->
     <section class="section-padding">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
                 <h2 class="fw-bold">Six Reasons Organisations Choose CDS</h2>
-                <p class="text-muted">From private banks to defence ministries — consistent, documented service delivery</p>
+                <p class="text-muted">From private banks to defence ministries — consistent, documented service delivery
+                </p>
             </div>
 
             <div class="row g-4">
@@ -58,7 +169,9 @@
                         <div class="icon-box mb-4 text-primary icon-box-xl">📋</div>
                         <h4 class="fw-bold mb-3">AMC — Not Just a Contract. A Safety Net.</h4>
                         <p class="text-muted">
-                            Your e-GP bid won. Your equipment arrived. Now comes the part most vendors skip — keeping it running. CDS AMC covers hardware, software, and network under one SLA. Every contract ships with Bangladesh Bank-ready audit documentation.
+                            Your e-GP bid won. Your equipment arrived. Now comes the part most vendors skip — keeping it
+                            running. CDS AMC covers hardware, software, and network under one SLA. Every contract ships
+                            with Bangladesh Bank-ready audit documentation.
                         </p>
                         <div class="d-flex gap-2 flex-wrap mt-3">
                             <span class="badge bg-light-custom text-dark border">Preventive + Reactive AMC</span>
@@ -74,7 +187,9 @@
                         <div class="icon-box mb-4 text-primary icon-box-xl">🖥️</div>
                         <h4 class="fw-bold mb-3">NOC That Catches Problems Before You Do.</h4>
                         <p class="text-muted">
-                            500+ ATM terminals. 120,000 MDM-enrolled tablets. All watched from our Dhaka NOC, 24 hours a day. When a terminal drops, our team knows in under 15 minutes — usually before the branch calls.
+                            500+ ATM terminals. 120,000 MDM-enrolled tablets. All watched from our Dhaka NOC, 24 hours a
+                            day. When a terminal drops, our team knows in under 15 minutes — usually before the branch
+                            calls.
                         </p>
                         <div class="d-flex gap-2 flex-wrap mt-3">
                             <span class="badge bg-light-custom text-dark border">24/7 NOC — Uttara HQ</span>
@@ -90,7 +205,9 @@
                         <div class="icon-box mb-4 text-primary icon-box-xl">🔧</div>
                         <h4 class="fw-bold mb-3">Engineers in Every District. Not Just Dhaka.</h4>
                         <p class="text-muted">
-                            The BBS Census sent us to Sylhet, Rangamati, and Teknaf simultaneously. We managed it. 200+ certified engineers across all 64 districts handle ATM installs, solar commissioning, and server room build-outs — all with OEM warranty parts.
+                            The BBS Census sent us to Sylhet, Rangamati, and Teknaf simultaneously. We managed it. 200+
+                            certified engineers across all 64 districts handle ATM installs, solar commissioning, and
+                            server room build-outs — all with OEM warranty parts.
                         </p>
                         <div class="d-flex gap-2 flex-wrap mt-3">
                             <span class="badge bg-light-custom text-dark border">All 64 Districts Reachable</span>
@@ -106,7 +223,10 @@
                         <div class="icon-box mb-4 text-primary icon-box-xl">🎓</div>
                         <h4 class="fw-bold mb-3">Training They'll Actually Use.</h4>
                         <p class="text-muted">
-                            Theory sessions don't fix ATMs. Our training is hands-on — bank staff learn first-line ATM maintenance, government IT teams learn MDM administration, and ERP users practice the workflows they'll run daily. Courses available at client premises or our Dhaka training centre.
+                            Theory sessions don't fix ATMs. Our training is hands-on — bank staff learn first-line ATM
+                            maintenance, government IT teams learn MDM administration, and ERP users practice the
+                            workflows they'll run daily. Courses available at client premises or our Dhaka training
+                            centre.
                         </p>
                         <div class="d-flex gap-2 flex-wrap mt-3">
                             <span class="badge bg-light-custom text-dark border">Hands-On Lab Training</span>
@@ -122,7 +242,9 @@
                         <div class="icon-box mb-4 text-primary icon-box-xl">📦</div>
                         <h4 class="fw-bold mb-3">The Right Part. Same Day. No Fakes.</h4>
                         <p class="text-muted">
-                            Counterfeit Dell RAM and Kingteller ATM modules are a real problem in Bangladesh's grey market. CDS imports directly — Dell, Kingteller, Gigabyte, Sungrow. Our Dhaka warehouse stocks 3,000+ SKUs for same-day critical dispatch.
+                            Counterfeit Dell RAM and Kingteller ATM modules are a real problem in Bangladesh's grey
+                            market. CDS imports directly — Dell, Kingteller, Gigabyte, Sungrow. Our Dhaka warehouse
+                            stocks 3,000+ SKUs for same-day critical dispatch.
                         </p>
                         <div class="d-flex gap-2 flex-wrap mt-3">
                             <span class="badge bg-light-custom text-dark border">Wide IT & Solar SKU Range</span>
@@ -138,7 +260,9 @@
                         <div class="icon-box mb-4 text-primary icon-box-xl">📄</div>
                         <h4 class="fw-bold mb-3">Tender Support That Wins Bids.</h4>
                         <p class="text-muted">
-                            Most IT companies in Bangladesh can supply equipment. Few can write a compliant BOQ, attach Bank Asia solvency, and track post-award delivery on the CPTU portal. We maintain a clean record on the CPTU e-GP portal — zero delivery defaults, zero blacklisting.
+                            Most IT companies in Bangladesh can supply equipment. Few can write a compliant BOQ, attach
+                            Bank Asia solvency, and track post-award delivery on the CPTU portal. We maintain a clean
+                            record on the CPTU e-GP portal — zero delivery defaults, zero blacklisting.
                         </p>
                         <div class="d-flex gap-2 flex-wrap mt-3">
                             <span class="badge bg-light-custom text-dark border">e-GP Verified Vendor</span>
@@ -168,9 +292,11 @@
     <section class="section-padding bg-primary text-white text-center">
         <div class="container">
             <p class="text-white-50 mb-2" data-aos="fade-up">Ready to start?</p>
-            <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">Let's Build Bangladesh's Next Digital Infrastructure</h2>
+            <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">Let's Build Bangladesh's Next Digital
+                Infrastructure</h2>
             <div class="d-flex gap-3 justify-content-center flex-wrap" data-aos="fade-up" data-aos-delay="200">
-                <a href="contact.html" class="btn btn-light btn-lg fw-bold">Request a Consultation <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="contact.html" class="btn btn-light btn-lg fw-bold">Request a Consultation <i
+                        class="fas fa-arrow-right ms-2"></i></a>
                 <a href="solutions.html" class="btn btn-outline-light btn-lg fw-bold">View All Solutions</a>
             </div>
         </div>
@@ -184,4 +310,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
