@@ -249,4 +249,61 @@
     // DELETE the old trailing block that duplicated setActiveMenu logic —
     // it ran too early (before header was in DOM) and is now fully redundant.
 
+
+
+
+    /* ============================================
+   SCROLL-TO-TOP BUTTON WITH CIRCULAR PROGRESS
+   Add this block into your existing main.js
+   (after header/footer are injected, or anywhere
+   that runs on every page load)
+   ============================================ */
+
+    (function () {
+        // 1. Inject the button markup once, on every page
+        const scrollBtnHTML = `
+        <a href="#" class="scroll-top" aria-label="Scroll to top">
+            <svg class="scroll-top-ring" viewBox="0 0 44 44">
+                <circle class="scroll-top-ring-bg" cx="22" cy="22" r="20"></circle>
+                <circle class="scroll-top-ring-progress" cx="22" cy="22" r="20"></circle>
+            </svg>
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    `;
+        document.body.insertAdjacentHTML('beforeend', scrollBtnHTML);
+
+        const scrollBtn = document.querySelector('.scroll-top');
+        const progressRing = document.querySelector('.scroll-top-ring-progress');
+        const radius = 20;
+        const circumference = 2 * Math.PI * radius;
+
+        progressRing.style.strokeDasharray = `${circumference} ${circumference}`;
+        progressRing.style.strokeDashoffset = circumference;
+
+        function updateScrollProgress() {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
+
+            // Fill the ring based on how far down the page you are
+            const offset = circumference - (scrollPercent * circumference);
+            progressRing.style.strokeDashoffset = offset;
+
+            // Show button only after scrolling down a bit (300px)
+            if (scrollTop > 300) {
+                scrollBtn.classList.add('active');
+            } else {
+                scrollBtn.classList.remove('active');
+            }
+        }
+
+        window.addEventListener('scroll', updateScrollProgress, { passive: true });
+        updateScrollProgress(); // run once on load in case page is already scrolled
+
+        scrollBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+
 })(jQuery);
