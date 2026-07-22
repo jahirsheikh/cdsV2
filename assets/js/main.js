@@ -56,27 +56,23 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <a href="mailto:info@cdssssl.com" class="me-3 text-white" aria-label="Email info at CDS">
-                    <i class="fas fa-envelope text-primary me-2" aria-hidden="true"></i> info@cdssssl.com
+                <a href="mailto:info@cdsssl.com" class="me-3 text-white" aria-label="Email info at CDS">
+                    <i class="fas fa-envelope text-primary me-2" aria-hidden="true"></i> info@cdsssl.com
                 </a>
                 <a href="tel:+8801710905771" class="text-white ms-3" aria-label="Call CDS">
                     <i class="fas fa-phone-alt text-primary me-2" aria-hidden="true"></i> +880 1710905771
                 </a>
             </div>
             <div class="col-md-6 text-end">
-                <a href="https://www.facebook.com/profile.php?id=100092745161596"
-                   class="text-white me-3" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=100092745161596" class="text-white me-3"
+                    target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.linkedin.com/company/107734189/"
-                   class="text-white me-3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/107734189/" class="text-white me-3" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-
-                <a href="contact.html" >
-    Talk to Our Team
-</a>
-     
+                <a href="contact.html">Talk to Our Team</a>
             </div>
         </div>
     </div>
@@ -96,7 +92,7 @@
             <span class="brand-accent-line"></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -104,31 +100,39 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                       role="button" aria-haspopup="true" aria-expanded="false">Company</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Company</a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="smiling-experience.html">Smiling Experience</a></li>
                         <li><a class="dropdown-item" href="memberships.html">Memberships</a></li>
                         <li><a class="dropdown-item" href="certificate.html">Certifications</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="service.html">Services</a>
-                </li>
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                       role="button" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Solutions</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="telecom.html">Telecom Managed Services</a></li>
+                        <li><a class="dropdown-item" href="oem-distribution.html">OEM Distribution</a></li>
                         <li><a class="dropdown-item" href="mdmsolution.html">MDM Solution</a></li>
+                        <li><a class="dropdown-item" href="egp-public-sector.html">e-GP & Public Sector</a></li>
+                        <li><a class="dropdown-item" href="fintech-digitalbanking.html">FinTech & Digital Banking</a></li>
                     </ul>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="energy-power.html">Energy & Power</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="why-cds.html">Why CDS</a>
+                </li>
+
                 <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
                     <a href="contact.html" class="btn btn-primary-custom">Get Started</a>
                 </li>
@@ -143,54 +147,156 @@
 <footer class="footer">
     <div class="container">
         <div class="row g-4 mb-5">
+            <!-- Brand + Certifications -->
             <div class="col-lg-4 col-md-6">
                 <div class="brand-footer mb-4">
                     <strong class="h3 mb-0">CDS</strong>
-                    <div class="brand-subtitle">System & Solution Ltd</div>
+                    <div class="brand-subtitle">System & Solution Limited</div>
                 </div>
-                <p class="mb-4">Empowering businesses with smart GPS tracking, advanced fleet management, and
-                    cutting-edge IoT solutions.</p>
-                <div class="d-flex gap-3">
-                    <a href="https://www.facebook.com/profile.php?id=100092745161596" class="social-btn"
-                       target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/107734189/" class="social-btn"
-                       target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <p class="mb-4">Bangladesh's trusted enterprise technology partner. Architecting digital
+                    infrastructure since 2015.</p>
+                <div class="d-flex gap-3 mb-4">
+                    <a href="https://www.linkedin.com/company/107734189/" class="social-btn" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     </a>
+                    <a href="https://www.facebook.com/profile.php?id=100092745161596" class="social-btn"
+                        target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:info@cdsssl.com" class="social-btn" aria-label="Email">
+                        <i class="fas fa-at" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="d-flex flex-column gap-2 footer-certs">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fas fa-certificate text-primary"></i>
+                        <div>
+                            <div class="fw-semibold small">ISO 9001:2015</div>
+                            <div class="text-muted small">RoyalCert / IAF / UAF</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fas fa-laptop-code text-primary"></i>
+                        <div>
+                            <div class="fw-semibold small">BASIS Member</div>
+                            <div class="text-muted small">Bangladesh Association of Software</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fas fa-headset text-primary"></i>
+                        <div>
+                            <div class="fw-semibold small">BACCO Member</div>
+                            <div class="text-muted small">Bangladesh Call Centre Association</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fas fa-check-circle text-primary"></i>
+                        <div>
+                            <div class="fw-semibold small">e-GP Verified</div>
+                            <div class="text-muted small">Central Procurement Authority</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Solutions -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Solutions</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="mdmsolution.html">MDM Solutions</a></li>
+                    <li class="mb-2"><a href="fintech-digitalbanking.html">FinTech & Digital Banking</a></li>
+                    <li class="mb-2"><a href="telecom.html">Telecom Managed Services</a></li>
+                    <li class="mb-2"><a href="energy-power.html">Energy & Solar (EaaS)</a></li>
+                    <li class="mb-2"><a href="oem-distribution.html">OEM Distribution</a></li>
+                    <li class="mb-2"><a href="egp-public-sector.html">eGP & Public Sector</a></li>
+                </ul>
+            </div>
+
+            <!-- Company + Resources -->
             <div class="col-lg-2 col-md-6">
                 <h5 class="footer-title">Company</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="about.html">About Us</a></li>
-                    <li class="mb-2"><a href="#">Careers</a></li>
-                    <li class="mb-2"><a href="#">Blog</a></li>
-                    <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    <li class="mb-2"><a href="about.html">About CDS</a></li>
+                    <li class="mb-2"><a href="about.html#leadership">Leadership Team</a></li>
+                    <li class="mb-2"><a href="certificate.html">Certifications</a></li>
+                    <li class="mb-2"><a href="clients.html">Our Clients</a></li>
+                    <li class="mb-2"><a href="memberships.html">Memberships</a></li>
+                    <li class="mb-2"><a href="why-cds.html">Why CDS</a></li>
                 </ul>
-            </div>
-            <div class="col-lg-2 col-md-6">
-                <h5 class="footer-title">Services</h5>
+
+                <h5 class="footer-title mt-4">Resources</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="service.html">Billing Solution</a></li>
-                    <li class="mb-2"><a href="service.html">ERP Management System</a></li>
-                    <li class="mb-2"><a href="service.html">ATM & CRM Sales</a></li>
+                    <li class="mb-2"><a href="smiling-experience.html">Case Studies</a></li>
+                    <li class="mb-2"><a href="contact.html">Request a Demo</a></li>
+                    <li class="mb-2"><a href="contact.html">Partnership Inquiry</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <h5 class="footer-title">Newsletter</h5>
-                <p>Subscribe to our newsletter to receive latest updates and offers.</p>
-                <form class="d-flex mt-3" aria-label="Subscribe to newsletter">
-                    <input type="email" aria-label="Email address"
-                           class="form-control me-2 bg-dark text-white border-secondary"
-                           placeholder="Email Address">
-                    <button class="btn btn-primary-custom" type="button">Subscribe</button>
-                </form>
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Contact</h5>
+                <ul class="list-unstyled footer-contact">
+                    <li class="d-flex gap-2 mb-3">
+                        <i class="fas fa-location-dot text-primary mt-1"></i>
+                        <div>
+                            <div class="fw-semibold small">Head Office</div>
+                            <div class="text-light small">House #21, Road #13, Sector #01, Uttara, Dhaka-1230,
+                                Bangladesh</div>
+                        </div>
+                    </li>
+                    <li class="d-flex gap-2 mb-3">
+                        <i class="fas fa-industry text-primary mt-1"></i>
+                        <div>
+                            <div class="fw-semibold small">Warehouse</div>
+                            <div class="text-light small">190/C Fakirapool (GF), Motijheel, Dhaka-1000</div>
+                        </div>
+                    </li>
+                    <li class="d-flex gap-2 mb-3">
+                        <i class="fas fa-phone text-primary mt-1"></i>
+                        <div>
+                            <div class="fw-semibold small">Phone</div>
+                            <div class="text-light small">
+                                <a href="tel:+8801678077025" class="text-light">+880 1678 077 025</a><br>
+                                <a href="tel:+8801710905771" class="text-light">+880 1710 905 771</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-flex gap-2 mb-3">
+                        <i class="fas fa-envelope text-primary mt-1"></i>
+                        <div>
+                            <div class="fw-semibold small">Email</div>
+                            <div class="text-light small">
+                                <a href="mailto:info@cdsssl.com" class="text-light">info@cdsssl.com</a><br>
+                                <a href="mailto:support@cdsssl.com" class="text-light">support@cdsssl.com</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-flex gap-2">
+                        <i class="fas fa-clock text-primary mt-1"></i>
+                        <div>
+                            <div class="fw-semibold small">Business Hours</div>
+                            <div class="text-light small">
+                                Sun–Thu: 9:00 AM – 6:00 PM<br>
+                                Sat: 10:00 AM – 3:00 PM<br>
+                                24/7 Emergency Hotline
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="border-top border-secondary pt-4 text-center">
-            <p class="mb-0">&copy; <span id="currentYear"></span> CDS. All Rights Reserved.</p>
+
+        <div class="border-top border-secondary pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="mb-0 text-center text-md-start">&copy; <span id="currentYear"></span> CDS System & Solution
+                Limited. All rights reserved. Registered in Bangladesh.</p>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
         </div>
     </div>
 </footer>
@@ -246,8 +352,7 @@
         });
     }
 
-    // DELETE the old trailing block that duplicated setActiveMenu logic —
-    // it ran too early (before header was in DOM) and is now fully redundant.
+
 
 
 
