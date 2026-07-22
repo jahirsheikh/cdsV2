@@ -1011,11 +1011,11 @@ a:hover {
 }
 /* Per-page hero backgrounds */
 /* Per-page hero backgrounds (centralized) */
-.hero-index {
+.hero-index { 
   background-image: url("/assets/img/hero-index.jpg");
 }
 .hero-contact {
-  background-image: url("/assets/img/hero-contact img.jpg");
+  background-image: url("assets/img/hero-contact img.jpg");
 }
 .hero-about {
   background-image: url("/assets/img/hero-about.jpg");

@@ -311,7 +311,7 @@
             $('#header-placeholder').html(headerHTML);
             $('#footer-placeholder').html(footerHTML);
             setActiveMenu();
-            // initSolutionsMobileDropdown();
+            initSolutionsMobileDropdown();
             try {
                 $('#footer-placeholder').find('#currentYear').text(new Date().getFullYear());
             } catch (e) {
@@ -354,8 +354,16 @@
 
 
 
-
-
+    function initSolutionsMobileDropdown() {
+        $('.navbar-nav .dropdown-toggle').off('click.mobileDropdown').on('click.mobileDropdown', function (e) {
+            if ($(window).width() < 992) {
+                e.preventDefault();
+                const $menu = $(this).next('.dropdown-menu');
+                $('.navbar-nav .dropdown-menu').not($menu).removeClass('show');
+                $menu.toggleClass('show');
+            }
+        });
+    }
 
     /* ============================================
    SCROLL-TO-TOP BUTTON WITH CIRCULAR PROGRESS
